@@ -3,7 +3,7 @@
 
 int main(void) {
 
-	setvbuf(stdout, NULL, _IONBF, 0);
+	setbuf(stdout, NULL);
 // EJERCICIO 1A
 	printf("Bienvenidos a Programación 1-UTN\n");
 
