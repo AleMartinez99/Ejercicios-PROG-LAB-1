@@ -1,11 +1,16 @@
 /*
- ============================================================================
- Name        : Ejercicio.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+Debemos alquilar el servicio de transporte para llegar a Mar del Plata con un grupo de personas, de cada persona debemos obtener los siguientes datos:
+número de cliente,
+estado civil ('s' para soltero", 'c' para casado o 'v' viudo),
+edad( solo mayores de edad, más de 17),
+temperatura corporal (validar por favor)
+y sexo ('f' para femenino, 'm' para masculino, 'o' para no binario).
+NOTA: el precio por pasajero es de $600.
+Se debe informar (solo si corresponde):
+a) La cantidad de personas con estado "viudo" de más de 60 años.
+b) el número de cliente y edad de la mujer soltera más joven.
+c) cuánto sale el viaje total sin descuento.
+d) si hay más del 50% de los pasajeros que tiene más de 60 años , el precio final tiene un descuento del 25%, que solo mostramos si corresponde.
  */
 
 #include <stdio.h>
@@ -111,13 +116,13 @@ int main(void) {
 	precioViaje = PRECIO * cantPersonas;
 
 
-	printf("A - Cantidad de personas con estado viudo de m�s de 60 a�os: %d\n", cantViudosMas60);
+	printf("A - Cantidad de personas con estado viudo de más de 60 años: %d\n", cantViudosMas60);
 	printf("B - Numero cliente de soltera mas joven: %d\n", numClienteSolteraJoven);
 	printf("Edad de soltera mas joven: %d\n", edadSolteraJoven);
 	printf("C - Precio total del viaje: %d\n", precioViaje);
 	if(cantMayores60 > (cantPersonas / 2) ) {
 			precioViajeConDescuento = precioViaje / 1.25;
-			printf("M�s del 50 porciento de los pasajeros que tiene m�s de 60 anios, el precio final con descuento es: %d\n", precioViajeConDescuento);
+			printf("Más del 50 porciento de los pasajeros que tiene más de 60 anios, el precio final con descuento es: %d\n", precioViajeConDescuento);
 		}
 
 	return EXIT_SUCCESS;
