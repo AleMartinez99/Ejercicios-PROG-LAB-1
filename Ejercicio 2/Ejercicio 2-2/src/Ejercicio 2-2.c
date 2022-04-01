@@ -1,11 +1,6 @@
 /*
- ============================================================================
- Name        : Ejercicio.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
+ Ingresar 10 números enteros, distintos de cero. Mostrar:Cantidad de pares e impares.
+ El menor número ingresado.De los pares el mayor número ingresado.Suma de los positivos.Producto de los negativos.
  */
 
 #include <stdio.h>
