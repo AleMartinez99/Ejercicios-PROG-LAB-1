@@ -15,6 +15,7 @@ void mi_tomarEnteroSinLimit(int num[], char mensaje[], char mensajeError[], int 
 int initNumeros(int num[], int tam);
 
 int main(void) {
+
 	setbuf(stdout, NULL);
 
 	int numeros[TAM];
