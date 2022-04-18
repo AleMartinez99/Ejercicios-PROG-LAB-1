@@ -32,8 +32,6 @@ int main(void) {
 	mi_corregirUnaCadena(nombre);
 	printf("%s", nombre);
 
-
-
 	/*
 	printf("Mi cadena tiene: %d caracteres",mi_validarLargoCadena(nombre));
 	*/
